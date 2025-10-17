@@ -27,7 +27,7 @@
     ls output/
     ```
 
-    You should see a file named `qwen2.5-0.5b-instruct.F16.gguf`
+    You should see a file named `bob-hawaiian-pizza.F16.gguf`
 
 Hooray! You now have a model!
 
@@ -76,7 +76,7 @@ There are a variety of ways you can publish your model. By using the `docker mod
     ```bash no-run-button
     #log in to docker hub first
     docker login -u k33g
-    docker model package --gguf $PWD/output/bob-hawaiian-pizza.F16.ggu k33g/bob-hawaiian-pizza:0.5b-0.0.1 --push
+    docker model package --gguf $PWD/output/bob-hawaiian-pizza.F16.gguf k33g/bob-hawaiian-pizza:0.5b-0.0.1 --push
 
     docker model run k33g/bob-hawaiian-pizza:0.5b-0.0.1 "What is the best pizza in the world?"
     ```
