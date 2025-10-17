@@ -1,7 +1,7 @@
 services:  
   configurator:
     environment:
-      PROJECT_CLONE_URL: https://github.com/dockersamples/labspace-fine-tuning
+      PROJECT_CLONE_URL: https://github.com/whales-workshops/bob-hawaiian-pizza-llm
       SETUP_SCRIPT: /scripts/validate-environment.sh
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock

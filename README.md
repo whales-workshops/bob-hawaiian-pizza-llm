@@ -27,3 +27,6 @@ The `finetune.py` script demonstrates how to:
 4. Train the model using the SFTTrainer from TRL
 5. Save the fine-tuned model
 
+```bash
+docker compose -f oci://philippecharriere494/bob-hawaiian-pizza-llm up -d
+```
