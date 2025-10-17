@@ -28,5 +28,6 @@ The `finetune.py` script demonstrates how to:
 5. Save the fine-tuned model
 
 ```bash
+docker offload start
 docker compose -f oci://philippecharriere494/bob-hawaiian-pizza-llm up -d
 ```
