@@ -6,6 +6,7 @@ import shutil
 
 max_seq_length = 2048
 model, tokenizer = FastModel.from_pretrained(
+    #model_name="unsloth/gemma-3-270m-it",
     model_name="unsloth/qwen2.5-0.5b-instruct",
     max_seq_length=max_seq_length,
     load_in_4bit=False,
@@ -86,3 +87,4 @@ print(trainer_stats)
 
 os.makedirs("gguf_output", exist_ok=True) 
 shutil.move("qwen2.5-0.5b-instruct.F16.gguf", "gguf_output/bob-hawaiian-pizza.F16.gguf")
+#shutil.move("gemma-3-270m-it.F16.gguf", "gguf_output/bob-hawaiian-pizza-gemma-base.F16.gguf")
